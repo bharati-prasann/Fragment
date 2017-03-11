@@ -21,62 +21,62 @@ public class MainActivity extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        Log.i("onStart","Inside onStart");
+        Log.i("onResume","Inside onResume");
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i("onStart","Inside onStart");
+        Log.i("onCreate","Inside onCreate");
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.i("onStart","Inside onStart");
-        return super.onCreateView(inflater, container, savedInstanceState);
+        Log.i("onCreateView","Inside onCreateView");
+        return  inflater.inflate(R.layout.fragment1,container,false);
 
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        Log.i("onStart","Inside onStart");
+        Log.i("onAttach","Inside onAttach");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.i("onStart","Inside onStart");
+        Log.i("onPause","Inside onPause");
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.i("onStart","Inside onStart");
+        Log.i("onStop","Inside onStop");
     }
 
     @Override
     public void onDestroyView() {
-        Log.i("onStart","Inside onStart");
+        Log.i("onDestroyView","Inside onDestroyView");
         super.onDestroyView();
     }
 
     @Override
     public void onDetach() {
-        Log.i("onStart","Inside onStart");
+        Log.i("onDetach","Inside onDetach");
         super.onDetach();
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.i("onStart","Inside onStart");
+        Log.i("onDestroy","Inside onDestroy");
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Log.i("onStart","Inside onStart");
+        Log.i("onActivityCreated","Inside onActivityCreated");
     }
 }
